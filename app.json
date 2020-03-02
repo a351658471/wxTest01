@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "MyChat"
+  },
+  "tabBar": {
+    "color": "#BAB7BA",
+    "selectedColor": "#D0435A",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "用车",
+      "iconPath": "/assets/fxp.png",
+      "selectedIconPath": "/assets/fxp_active.png"
+      },
+      {
+      "pagePath":"pages/home/home",
+      "text":"买车",
+      "iconPath":"/assets/car.png",
+      "selectedIconPath": "/assets/car_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "车友",
+        "iconPath": "/assets/msg.png",
+        "selectedIconPath": "/assets/msg_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/assets/me.png",
+        "selectedIconPath": "/assets/me_active.png"
+      }
+      ]
+  }
+}
