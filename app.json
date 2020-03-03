@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/useCar/useCar",
+    "pages/buyCar/buyCar",
+    "pages/carDetail/carDetail",
+    "pages/carFriend/carFriend",
+    "pages/mine/mine",
+    "pages/useCar/detail/detail",
+    "pages/useCar/zxDetail/zxDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "MyChat"
+  },
+  "tabBar": {
+    "color": "#BAB7BA",
+    "selectedColor": "#D0435A",
+    "list": [
+      {
+        "pagePath": "pages/useCar/useCar",
+        "text": "用车",
+        "iconPath": "/assets/fxp.png",
+        "selectedIconPath": "/assets/fxp_active.png"
+      },
+      {
+        "pagePath": "pages/buyCar/buyCar",
+        "text": "买车",
+        "iconPath": "/assets/car.png",
+        "selectedIconPath": "/assets/car_active.png"
+      },
+      {
+        "pagePath": "pages/carFriend/carFriend",
+        "text": "车友",
+        "iconPath": "/assets/msg.png",
+        "selectedIconPath": "/assets/msg_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/assets/me.png",
+        "selectedIconPath": "/assets/me_active.png"
+      }
+    ]
+  }
+}

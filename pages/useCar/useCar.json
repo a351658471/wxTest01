@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "my-swiper": "/components/mySwiper/mySwiper",
+    "my-ltab": "/components/leftTab/leftTab",
+    "my-carList": "/components/carList02/carList02"
+  }
+}

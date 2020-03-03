@@ -1,0 +1,79 @@
+page{
+  background: #F5F5F5
+}
+.bigBox{
+  width:100%
+}
+.topNavigate{
+  padding-left: 1rem;
+  display: flex;
+  height:2.5rem;
+  justify-content: space-around;
+  line-height: 2rem;
+  width:60%
+
+}
+.top{
+  text-align: center;
+}
+
+
+.current text{
+  font-size: 16px;
+  font-weight: bolder;
+  border-bottom: 3px solid red
+  
+}
+/* .current ::before{
+  content: '';
+  display: block;
+  width: 6px;
+  height:3px;
+  background: red;
+  border-radius: 10px;
+} */
+.item{
+  background: #fff;
+  border-radius:10px;
+  width: 90%;
+  height:16rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem
+}
+.topText{
+  font-size: 12px;
+  color: #999
+}
+.carBox{
+  width:100%;
+  text-align: center
+}
+.carImg{
+  width:95%
+}
+.topText{
+  margin-left: 0.5rem;
+  height: 3rem;
+  line-height: 3rem
+}
+.bottom{
+  height: 2rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content : space-between;
+  font-size: 10px;
+  color: #999;
+  margin-left: 0.5rem;
+}
+.bottomRight{
+  font-size: 10px;
+  width: 7rem;
+  display: flex;
+  justify-content : space-around
+}
+.bottomRightItem{
+  display: flex;
+}
+.mtext{
+  margin-left: 3px;
+}

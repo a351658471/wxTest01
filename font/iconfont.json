@@ -1,0 +1,30 @@
+{
+  "id": "1653281",
+  "name": "weixinTest",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "579286",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "9713068",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "10157619",
+      "name": "转发",
+      "font_class": "zhuanfa",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}
