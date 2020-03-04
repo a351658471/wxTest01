@@ -4,7 +4,7 @@
         <view class='topText'>
           {{item.msg}}
         </view>
-
+        
         <!-- video -->
          <view wx:if="{{item.isVideo}}">
              <video src="{{item.url}}" direction style='left:50%;transform:translateX(-50%);height:10rem;width:16rem'></video>
