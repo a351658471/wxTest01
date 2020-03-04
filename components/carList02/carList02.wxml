@@ -7,7 +7,7 @@
 
         <!-- video -->
          <view wx:if="{{item.isVideo}}">
-             <video src="{{item.url}}" direction style='left:50%;transform:translateX(-50%);height:10rem;width:15rem'></video>
+             <video src="{{item.url}}" direction style='left:50%;transform:translateX(-50%);height:10rem;width:16rem'></video>
         </view> 
 
         <!-- image -->
