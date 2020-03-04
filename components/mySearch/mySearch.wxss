@@ -1,0 +1,24 @@
+/* components/mySearch/mySearch.wxss */
+.outBox{
+  width: 90%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+
+}
+.searchBox{
+  width: 85%;
+  background:#F7F7F7; 
+  height:2rem; 
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+   padding-left: 0.5rem;
+   font-size: 0.8rem;
+}
+.tj{
+  width: 1.5rem;
+  height:1.5rem;
+  font-size: 0.5rem;
+  text-align: center
+}

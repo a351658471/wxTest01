@@ -1,1 +1,41 @@
 /* pages/mine/mine.wxss */
+page{
+  width: 100%;
+  height:100%;
+  background: #F8F6F9
+}
+.head{
+  background: #FA4154;
+  height:8rem
+}
+.headTop{
+  display: flex;
+  width: 90%;
+  height:70%;
+  margin: 0 auto;
+  align-items: center
+}
+.topImg{
+  width: 4rem;
+  height: 4rem;
+ 
+  
+}
+.topImg image{
+  width: 100%;
+  height:100%;
+  border-radius: 50%
+}
+.topName{
+  margin-left: 1rem;
+   display: flex;
+  
+}
+.qiandao{
+  display: flex;
+  justify-content: space-between;
+  width:90%;
+  height:3.5rem;
+  margin:0 auto;
+  align-items:center;
+}

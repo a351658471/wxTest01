@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+      myData:{
+        portrait:'/assets/tx.jpg',
+        name:'汤姆猫',
+        isVip:true,
+        dt:[
+          '动态 10',
+          '关注 12',
+          '粉丝 3'
+        ]
+      }
   },
 
   /**

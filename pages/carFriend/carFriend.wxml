@@ -1,2 +1,64 @@
 <!--pages/carFriend/carFriend.wxml-->
-<text>pages/carFriend/carFriend.wxml</text>
+<view>
+<scroll-view scroll-y style='height:100%'>
+<!-- 搜索 -->
+  <my-search bind:inputEvent="inputEvent"  bind:clearEvent="clearEvent" inputValue="{{inputValue}}"></my-search>
+<!-- tab -->
+  <my-ltab tabList="{{tabList}}" fontSize='0.8rem'></my-ltab>
+
+<!-- 帖子 -->
+<view class='post'>
+  <block wx:for="{{filterData}}" wx:for-item="pdDataItem">
+    <view class='head'>
+      <view class='headLeft'>
+        <view class='tx'>
+          <image src='{{pdDataItem.tx}}' mode='scaleToFill'></image>
+        </view>
+        <view class='author'>{{pdDataItem.author}}</view>
+      </view>
+
+      <view class='isFocus'>
+        {{pdDataItem.isFocus}}
+      </view>
+    </view>
+
+    <view class='content'>
+      <view class='contentTitle'>
+          <view class='searchKey'>
+            #{{pdDataItem.searchKey}}#
+          </view>
+          <view class='describe'>
+            {{pdDataItem.describe}}
+          </view>
+      </view>
+      <view class='contentImg'>
+        <view class='imgItem'  wx:for="{{pdDataItem.img}}">
+          <image src='{{item}}' mode='scaleToFill' style='width:100%;height:100%'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='bottom'>
+          <view class='bottomLeft'>
+           {{pdDataItem.timeago}}
+          </view>
+         <view class='bottomRight'>
+              <view class='zf bottomRightItem'>
+                <view class='iconfont icon-zhuanfa'></view>
+                <view class='mtext'>{{pdDataItem.zf}}</view>
+              </view>
+              <view class='pl bottomRightItem'>
+                <view class='iconfont icon-pinglun'></view>
+                <view class='mtext'>{{pdDataItem.pl}}</view>
+              </view>
+              <view class='dz bottomRightItem ' bindtap='dzClick' data-index="{{index}}">
+                <view class='iconfont icon-dianzan'></view>
+                <view class='mtext'>{{pdDataItem.dz}}</view>
+              </view>
+          </view>
+        </view>
+  </block>
+</view>
+
+</scroll-view>
+</view>

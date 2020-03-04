@@ -2,7 +2,8 @@
 .leftTab{
   display: flex;
   width: 90%;
-  margin: 1rem auto
+  margin: 1rem auto;
+  
 }
 .tabItem{
   margin-right: 1rem

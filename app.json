@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/mine/mine",
+    "pages/carFriend/carFriend",
     "pages/useCar/useCar",
     "pages/buyCar/buyCar",
     "pages/carDetail/carDetail",
-    "pages/carFriend/carFriend",
-    "pages/mine/mine",
     "pages/useCar/detail/detail",
     "pages/useCar/zxDetail/zxDetail"
   ],

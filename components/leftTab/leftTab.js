@@ -4,14 +4,21 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    
     tabList: {
       type:Array,
       value:['新车', '二手车'],
+      
     },
 
     tabCurrent:{
       type:Number,
       value:0
+    },
+
+    fontSize: {
+      type:String,
+      value: '1rem'
     }
   },
 

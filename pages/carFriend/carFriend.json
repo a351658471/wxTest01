@@ -1,1 +1,6 @@
-{}
+{
+  "usingComponents":{
+    "my-search":"/components/mySearch/mySearch",
+    "my-ltab": "/components/leftTab/leftTab"
+  }
+}

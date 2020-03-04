@@ -1,0 +1,13 @@
+<!--components/mySearch/mySearch.wxml-->
+<view class='outBox'>
+  <view class='searchBox'>
+    <icon type='search'></icon>
+    <input style='width:80%' bindinput="inputEvent" value="{{inputValue}}"></input>
+    <icon type='cancel' color='#DEDEDE' bind:tap="clearEvent"></icon>
+  </view>
+  <view class='tj'>
+    <image src='/assets/tj.png' mode='scaleToFill' style='width:100%;height:100%'></image>
+    <view>发布</view>
+  </view>
+</view>
+
