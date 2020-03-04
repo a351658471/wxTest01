@@ -1,6 +1,5 @@
 <view class='bigBox'>
   <scroll-view scroll-y="true">
-
   <!-- tab -->
   <view>
     <my-ltab bind:tabClick="tabClick" tabList="{{tabList}}"></my-ltab>
@@ -15,6 +14,7 @@
 
   <!-- 用车知识 -->
   <view wx:else>
+  
     <my-carList bind:detail="detail1"></my-carList>
   </view>
   

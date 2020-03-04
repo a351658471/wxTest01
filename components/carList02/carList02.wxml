@@ -4,9 +4,17 @@
         <view class='topText'>
           {{item.msg}}
         </view>
-        <view class='carBox' bindtap='detail1' data-imgurl="{{item.url}}">
+
+        <!-- video -->
+         <view wx:if="{{item.isVideo}}">
+             <video src="{{item.url}}" direction style='left:50%;transform:translateX(-50%);height:10rem;width:15rem'></video>
+        </view> 
+
+        <!-- image -->
+        <view wx:else class='carBox' bindtap='detail1' data-imgurl="{{item.url}}">
           <image class="carImg" src="{{item.url}}" mode="scaleToFill"></image>
         </view>
+
         <view class='bottom'>
           <view class='bottomLeft'>
            {{item.timeago}}
