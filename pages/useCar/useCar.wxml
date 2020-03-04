@@ -1,0 +1,22 @@
+<view class='bigBox'>
+  <scroll-view scroll-y="true">
+
+  <!-- tab -->
+  <view>
+    <my-ltab bind:tabClick="tabClick" tabList="{{tabList}}"></my-ltab>
+  </view>
+    <!-- 官方资讯 -->
+  <view wx:if="{{isShow}}">
+      <my-swiper imgList='{{imgList}}'  isDots="{{true}}"></my-swiper>
+      <view style='margin-top:1.5rem'>
+       <my-carList bind:detail="zxDetail"></my-carList>
+      </view>
+  </view>
+
+  <!-- 用车知识 -->
+  <view wx:else>
+    <my-carList bind:detail="detail1"></my-carList>
+  </view>
+  
+  </scroll-view>
+</view>

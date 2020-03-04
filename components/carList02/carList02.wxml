@@ -1,0 +1,31 @@
+  <view>
+    <block wx:for="{{newsList}}">
+       <view class='item'>
+        <view class='topText'>
+          {{item.msg}}
+        </view>
+        <view class='carBox' bindtap='detail1' data-imgurl="{{item.url}}">
+          <image class="carImg" src="{{item.url}}" mode="scaleToFill"></image>
+        </view>
+        <view class='bottom'>
+          <view class='bottomLeft'>
+           {{item.timeago}}
+          </view>
+         <view class='bottomRight'>
+              <view class='zf bottomRightItem'>
+                <view class='iconfont icon-zhuanfa'></view>
+                <view class='mtext'>{{item.zf}}</view>
+              </view>
+              <view class='pl bottomRightItem'>
+                <view class='iconfont icon-pinglun'></view>
+                <view class='mtext'>{{item.pl}}</view>
+              </view>
+              <view class='dz bottomRightItem ' bindtap='dzClick' data-index="{{index}}">
+                <view class='iconfont icon-dianzan'></view>
+                <view class='mtext'>{{item.dz}}</view>
+              </view>
+          </view>
+        </view>
+      </view>
+      </block>
+    </view>

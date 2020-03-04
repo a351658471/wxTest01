@@ -7,6 +7,15 @@ Component({
     imgList:{
       type:Array,
       value:[]
+      
+    },
+    isMyDots:{
+      type:Boolean,
+      value:false
+    },
+    isDots:{
+      type:Boolean,
+      value:false
     }
   },
 

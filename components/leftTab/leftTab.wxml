@@ -1,0 +1,6 @@
+<!--components/leftTab/leftTab.wxml-->
+  <view class='leftTab'>
+     <block wx:for="{{tabList}}">
+      <view class='tabItem {{tabCurrent == index? "active" : ""}}' bindtap='tabClick' data-index='{{index}}'>{{item}}</view>
+     </block>
+  </view>

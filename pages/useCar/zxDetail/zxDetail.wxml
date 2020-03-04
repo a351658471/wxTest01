@@ -1,0 +1,10 @@
+<!--pages/useCar/zxDetail/zxDetail.wxml-->
+<view>
+  <!-- <view class='head'>
+    <view>{{carDetail.head}}</view>
+    <view>
+      <view>{{carDtail.author}}</view>
+      <view>{{carDtail.time}}</view>
+    </view>
+  </view> -->
+</view>

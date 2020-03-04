@@ -1,0 +1,59 @@
+<!--pages/home/home.wxml-->
+<view class='outbox'>
+<scroll-view scroll-y style='height:100%'>
+  <!-- 轮播图组件 -->
+  <my-swiper imgList="{{carData.imgList}}" isMyDots="{{true}}"></my-swiper>
+
+  <!-- 报价 -->
+  <view class='carDetail'>
+    <view class='detail-heard'>
+        <view class="heard-name">{{carData.situation.name}}</view>
+        <view class="heard-right">{{carData.situation.isnew}}</view>
+    </view>
+    <view class='detail-body'>
+      <view class='body-left'>
+          <block wx:for="{{carData.situation.cars}}">
+              <view class='left-item'>{{item}}</view>
+          </block>
+      </view>
+      <view class='body-right' style='color:#D0435A'>
+        ￥{{carData.situation.price}}
+      </view>
+    </view>
+  </view>
+
+  <!-- tab -->
+  <my-tab tabList="{{tabList}}" bind:tabClick="tabClick"></my-tab>
+
+  <!-- detail -->
+  <view style='height:20em;background:#fff'>
+  <view wx:if="{{currentIndex == 0}}" style='background:#fff; width:100%'>
+    <view style='width:90%; height:170px; margin:0 auto'>
+      <image src='/assets/1.jpg' mode="scaleToFill" style='width:100%; height:170px'></image>
+    </view>
+    <view style='width:90%; margin:1rem auto; font-size:14px'>
+    {{detailmsg}}
+    </view>
+  </view>
+
+
+    <view wx:elif="{{currentIndex == 1}}" style='width:100%; background:#fff'>
+    <view style='width:90%; margin:0 auto;border-top:1px solid #E8E5E9'>
+      <view wx:for="{{params}}"  style='padding:0.5rem 0; border-bottom:1px solid #E8E5E9; font-size:14px;display: flex;'>
+            <view style='width:5rem'>
+              {{item.param}}
+            </view>
+            <view>
+              {{item.name}}
+            </view>
+       </view>
+    </view>
+  </view>
+
+  <view wx:elif="{{currentIndex == 2}}">
+    流程图
+  </view>
+  </view>
+  </scroll-view>
+
+</view>
