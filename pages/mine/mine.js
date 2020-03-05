@@ -14,7 +14,23 @@ Page({
           '关注 12',
           '粉丝 3'
         ]
-      }
+      },
+
+      centerData:[
+        {
+          img:'/assets/grxx.png',
+          msg:'个人信息'
+        },
+        {
+          img:'/assets/lw.png',
+          msg:'积分奖励',
+
+        },
+        {
+          img:'/assets/jy.png',
+          msg:'建议反馈'
+        }
+      ]
   },
 
   /**

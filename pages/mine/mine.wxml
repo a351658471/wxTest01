@@ -26,3 +26,25 @@
     <view  style='height:2rem;width:3.5rem;border-radius:10px; background:#FC3047;line-height:2rem; text-align:center'>签到</view>
   </view>
   </view>
+  <view>
+
+   <view class='content'>
+     <view class='content-top'>
+        我的服务
+     </view>
+
+     <view class='content-center'>
+        <view wx:for="{{centerData}}" style='height:4.5rem; width:4rem;text-align:center'>
+          <view style='width:2rem; height:2rem;margin:auto'>
+            <image src='{{item.img}}' mode='scaleToFill' style='width:100%; height:100%'></image>
+          </view>
+          <view style='font-size:0.9rem;margin-top:1rem'>{{item.msg}}</view>
+        </view>
+     </view>
+        <view style='width:100%;background:#fff'>
+          <view style='width:90%;height:20rem;margin:0 auto'>
+          <image src='/assets/jlb.jpg' mode='widthFix' style='width:100%'></image>
+        </view>
+        </view>
+   </view>
+  </view>

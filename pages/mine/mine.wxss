@@ -39,3 +39,20 @@ page{
   margin:0 auto;
   align-items:center;
 }
+.content{
+  margin: 0.5rem auto 0 auto;
+  background:#fff;
+  
+}
+.content-top{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-weight: bolder
+}
+.content-center{
+  display: flex;
+  width: 90%;
+  margin:0 auto;
+  justify-content: space-between 
+}

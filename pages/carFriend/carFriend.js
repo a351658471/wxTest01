@@ -207,12 +207,27 @@ Page({
         [isAdd]: !this.data.PData[index].isAdd
 
       })
+
+      wx.showToast({
+        title: '点赞成功',
+      })
     } else {
       this.setData({
         [count]: this.data.PData[index].dz - 1,
         [isAdd]: !this.data.PData[index].isAdd
 
       })
+      wx.showToast({
+        title: '取消点赞',
+        duration:5000,
+        success:()=>{
+          console.log('1秒后关闭')
+          setTimeout(()=>{
+            wx.hideToast()
+          },100)
+        }
+      })
+
     }
 
   }
