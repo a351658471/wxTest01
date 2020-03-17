@@ -76,6 +76,11 @@ Page({
    wx.navigateTo({
      url: './zxDetail/zxDetail',
    })
-}
+},
 
+// addEvent(){
+//   this.setData({
+//     list:this.data.list.push(5)
+//   })
+// }
 })

@@ -1,5 +1,5 @@
 <view class='bigBox'>
-  <scroll-view scroll-y="true">
+   <scroll-view scroll-y="true">
   <!-- tab -->
   <view>
     <my-ltab bind:tabClick="tabClick" tabList="{{tabList}}"></my-ltab>
@@ -18,4 +18,13 @@
   </view>
   
   </scroll-view>
+
+
+
+ <!-- <view wx:for="{{list}}">
+    <view>{{item}}</view>
+ </view>
+ <button band:tap="addEvnet">
+    加1
+ </button> -->
 </view>
